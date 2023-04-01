@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'mixins';
+@import 'media';
+@import 'reset';
+@import 'typography';
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;  
+  font-weight: 700;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
