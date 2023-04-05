@@ -1,19 +1,37 @@
-@mixin placeholder ($color)
-{
-    &::-webkit-input-placeholder {
-        color: $color;
-        @content}
-    &:-moz-placeholder           { color: $color;@content}
-    &::-moz-placeholder          { color: $color;@content}
-    &:-ms-input-placeholder      { color: $color;@content}  
-};
+@mixin placeholder($color, $opacity: 100%) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+    @content;
+  }
+  &:-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+    @content;
+  }
+  &::-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+    @content;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+    @content;
+  }
+}
 
-@mixin input {
-    border: none;
-        background-color: $lightGrayishCyan;
-        color: $veryDarkCyan;
-        font-size: 24px;
-        font-weight: 700;
-        text-align: center;
-        padding: 10px;
+@mixin input($textDir: center) {
+  border: none;
+  background-color: $lightGrayishCyan;
+  color: $veryDarkCyan;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: $textDir;
+  padding: 10px;
+
+  &:hover,
+  &:focus {
+    border: 3px solid $strongCyan;
+  }
 }

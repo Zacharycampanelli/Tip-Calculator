@@ -1,4 +1,4 @@
-@mixin button {
+@mixin button($custom: false){
   width: 39vw;
   color: $white;
   background: $veryDarkCyan;
@@ -6,14 +6,17 @@
   padding: 12px;
 
 
-  &:hover  {
+@if $custom == false {
+
+  &:hover,
+  &:focus {
     color: $veryDarkCyan;
     background: $strongCyan;
+    cursor: pointer;
   }
-  &:active {
-    color: $veryDarkCyan;
-    background: $strongCyan;
-  }
+}
+
+  
 }
 
 @mixin reset_btn {

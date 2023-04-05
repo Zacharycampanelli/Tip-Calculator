@@ -86,8 +86,27 @@ header {
   color: hsl(183, 100%, 15%);
   font-size: 24px;
   font-weight: 700;
-  text-align: center;
+  text-align: right;
   padding: 10px;
+}
+.card_bill_input_box:hover, .card_bill_input_box:focus {
+  border: 3px solid hsl(172, 67%, 45%);
+}
+.card_bill_input_box::-webkit-input-placeholder {
+  color: hsl(183, 100%, 15%);
+  opacity: 50%;
+}
+.card_bill_input_box:-moz-placeholder {
+  color: hsl(183, 100%, 15%);
+  opacity: 50%;
+}
+.card_bill_input_box::-moz-placeholder {
+  color: hsl(183, 100%, 15%);
+  opacity: 50%;
+}
+.card_bill_input_box:-ms-input-placeholder {
+  color: hsl(183, 100%, 15%);
+  opacity: 50%;
 }
 .card_bill_input_icon {
   position: absolute;
@@ -104,20 +123,19 @@ header {
   flex-wrap: wrap;
 }
 .card_tip_btn_group .btn {
+  margin: 7px 0;
+}
+.card_tip_btn_group .btn:not(:last-child) {
   width: 39vw;
   color: hsl(0, 0%, 100%);
   background: hsl(183, 100%, 15%);
   border-radius: 5px;
   padding: 12px;
-  margin: 7px 0;
 }
-.card_tip_btn_group .btn:hover {
+.card_tip_btn_group .btn:not(:last-child):hover, .card_tip_btn_group .btn:not(:last-child):focus {
   color: hsl(183, 100%, 15%);
   background: hsl(172, 67%, 45%);
-}
-.card_tip_btn_group .btn:active {
-  color: hsl(183, 100%, 15%);
-  background: hsl(172, 67%, 45%);
+  cursor: pointer;
 }
 .card_tip_btn_group .btn:nth-child(even) {
   margin-left: 7px;
@@ -126,6 +144,11 @@ header {
   margin-right: 7px;
 }
 .card_tip_btn_group .btn:last-child {
+  width: 39vw;
+  color: hsl(0, 0%, 100%);
+  background: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  padding: 12px;
   border: none;
   background-color: hsl(185, 38%, 97%);
   color: hsl(183, 100%, 15%);
@@ -134,21 +157,24 @@ header {
   text-align: center;
   padding: 10px;
 }
+.card_tip_btn_group .btn:last-child:hover, .card_tip_btn_group .btn:last-child:focus {
+  border: 3px solid hsl(172, 67%, 45%);
+}
 .card_tip_btn_group .btn:last-child::-webkit-input-placeholder {
   color: hsl(183, 100%, 15%);
+  opacity: 100%;
 }
 .card_tip_btn_group .btn:last-child:-moz-placeholder {
   color: hsl(183, 100%, 15%);
+  opacity: 100%;
 }
 .card_tip_btn_group .btn:last-child::-moz-placeholder {
   color: hsl(183, 100%, 15%);
+  opacity: 100%;
 }
 .card_tip_btn_group .btn:last-child:-ms-input-placeholder {
   color: hsl(183, 100%, 15%);
-}
-.card_tip #dataEntered {
-  padding: 10px 10px 10px 40px;
-  text-align: right;
+  opacity: 100%;
 }
 
 .card_people {
@@ -163,8 +189,27 @@ header {
   color: hsl(183, 100%, 15%);
   font-size: 24px;
   font-weight: 700;
-  text-align: center;
+  text-align: right;
   padding: 10px;
+}
+.card_people_input_box:hover, .card_people_input_box:focus {
+  border: 3px solid hsl(172, 67%, 45%);
+}
+.card_people_input_box::-webkit-input-placeholder {
+  color: hsl(183, 100%, 15%);
+  opacity: 50%;
+}
+.card_people_input_box:-moz-placeholder {
+  color: hsl(183, 100%, 15%);
+  opacity: 50%;
+}
+.card_people_input_box::-moz-placeholder {
+  color: hsl(183, 100%, 15%);
+  opacity: 50%;
+}
+.card_people_input_box:-ms-input-placeholder {
+  color: hsl(183, 100%, 15%);
+  opacity: 50%;
 }
 .card_people_input_icon {
   position: absolute;
@@ -186,7 +231,8 @@ header {
   color: hsl(183, 15%, 56%);
   font-size: 13px;
 }
-.card_results #tip_amount, .card_results #total_amount {
+.card_results #tip_amount,
+.card_results #total_amount {
   font-size: 32px;
 }
 .card_results_input_row {

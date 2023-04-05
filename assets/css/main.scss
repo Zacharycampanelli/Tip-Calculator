@@ -39,7 +39,8 @@ header {
   &_input {
     position: relative;
     &_box {
-      @include input;
+      @include input($textDir: right);
+      @include placeholder($veryDarkCyan, 50%);
     }
 
     &_icon {
@@ -61,8 +62,10 @@ header {
     // margin: 0 auto;
 
     .btn {
-      @include button;
       margin: 7px 0;
+    }
+    .btn:not(:last-child) {
+      @include button;
     }
 
     .btn:nth-child(even) {
@@ -73,15 +76,10 @@ header {
     }
 
     .btn:last-child {
+      @include button($custom: true);
       @include input;
       @include placeholder($veryDarkCyan);
-      
     }
-
-  }
-  #dataEntered {
-    padding: 10px 10px 10px 40px;
-    text-align: right;
   }
 }
 
@@ -91,7 +89,8 @@ header {
   &_input {
     position: relative;
     &_box {
-      @include input;
+      @include input($textDir: right);
+      @include placeholder($veryDarkCyan, 50%);
     }
 
     &_icon {
@@ -118,7 +117,8 @@ header {
     font-size: 13px;
   }
 
-  #tip_amount, #total_amount {
+  #tip_amount,
+  #total_amount {
     font-size: 32px;
   }
 
@@ -138,7 +138,9 @@ header {
   }
 }
 
-
+// .custom_selected {
+//   border: 3px solid $strongCyan;
+// }
 
 .attribution {
   font-size: 11px;
