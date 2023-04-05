@@ -17,8 +17,13 @@
         <div class="card_bill">
           <h2>Bill</h2>
           <div class="card_bill_input">
-            <img src="./assets/images/icon-dollar.svg" class="card_bill_input_icon" alt="icon of a dollar sign" id="dollar_icon" />
-            <input class="card_bill_input_box" type="number"/>
+            <img
+              src="./assets/images/icon-dollar.svg"
+              class="card_bill_input_icon"
+              alt="icon of a dollar sign"
+              id="dollar_icon"
+            />
+            <input class="card_bill_input_box" type="number" />
           </div>
         </div>
 
@@ -30,22 +35,39 @@
             <button class="btn">15%</button>
             <button class="btn">25%</button>
             <button class="btn">50%</button>
-            <input class="btn" placeholder="Custom" />
+            <input class="btn" id="custom" placeholder="Custom" />
           </div>
         </div>
 
         <div class="card_people">
           <h2>Number of People</h2>
           <div class="card_people_input">
-            <img src="./assets/images/icon-person.svg" class="card_people_input_icon" alt="icon of a person" id="person_icon" />
+            <img
+              src="./assets/images/icon-person.svg"
+              class="card_people_input_icon"
+              alt="icon of a person"
+              id="person_icon"
+            />
             <input class="card_people_input_box" type="number" />
           </div>
         </div>
 
         <div class="card_results">
-          <div class="card_results_input_row"><h2>Tip Amount / person</h2></div>
-          <div class="card_results_input_row"><h2>Total / person</h2></div>
-          <button id="card_results_reset_btn">Reset</button>
+          <div class="card_results_input_row">
+            <div class="card_results_input_row_heading">
+              <h2>Tip Amount</h2>
+              <h3>/ person</h3>
+            </div>
+            <div id="tip_amount">$0.00</div>
+          </div>
+          <div class="card_results_input_row">
+            <div class="card_results_input_row_heading">
+              <h2>Total</h2>
+              <h3>/ person</h3>
+            </div>
+            <div id="total_amount">$0.00</div>
+          </div>
+          <button id="reset_btn">Reset</button>
         </div>
       </div>
     </main>
@@ -53,5 +75,6 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="#">Zachary Campanelli</a>.
     </div>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

@@ -12,7 +12,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: $darkGrayishCyan;
-  background: $lightGrayishCyan;
+  background: $background;
   width: 100vw;
 }
 
@@ -29,30 +29,30 @@ header {
 .card {
   background: $white;
   padding: 32px;
-  border-top-left-radius: 15%;
-  border-top-right-radius: 15%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .card_bill {
+  margin-bottom: 32px;
 
- &_input {
-      position: relative;
-      margin-bottom: 25px;
-      &_box {
-        @include input;
-        
-      }
-
-      &_icon {
-        position: absolute;
-        top: 16px;
-        left: 12px;
-      }
+  &_input {
+    position: relative;
+    &_box {
+      @include input;
     }
-  
+
+    &_icon {
+      position: absolute;
+      top: 16px;
+      left: 12px;
+    }
+  }
 }
 
 .card_tip {
+  margin-bottom: 32px;
+
   &_btn_group {
     // @include button;
     max-width: 100vw;
@@ -62,7 +62,7 @@ header {
 
     .btn {
       @include button;
-     margin: 7px 0;
+      margin: 7px 0;
     }
 
     .btn:nth-child(even) {
@@ -74,13 +74,20 @@ header {
 
     .btn:last-child {
       @include input;
-      @include placeholder($veryDarkCyan) 
-       
+      @include placeholder($veryDarkCyan);
+      
     }
+
+  }
+  #dataEntered {
+    padding: 10px 10px 10px 40px;
+    text-align: right;
   }
 }
 
 .card_people {
+  margin-bottom: 32px;
+
   &_input {
     position: relative;
     &_box {
@@ -88,18 +95,47 @@ header {
     }
 
     &_icon {
-    position: absolute;
-    top: 16px;
-    left: 12px;
+      position: absolute;
+      top: 16px;
+      left: 12px;
     }
-    
   }
 }
 
-
 .card_results {
+  color: $strongCyan;
+  background: $veryDarkCyan;
+  border-radius: 15px;
+  padding: 37px 24px 24px;
 
+  h2 {
+    color: $white;
+    margin-bottom: 3px;
+  }
 
+  h3 {
+    color: $dullGreenishGray;
+    font-size: 13px;
+  }
+
+  #tip_amount, #total_amount {
+    font-size: 32px;
+  }
+
+  &_input_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    &_heading {
+      flex-direction: column;
+    }
+  }
+
+  #reset_btn {
+    @include reset_btn;
+    font-size: 20px;
+    margin-top: 28px;
+  }
 }
 
 
@@ -112,7 +148,6 @@ header {
   color: hsl(228, 45%, 44%);
 }
 
-
 // Removes input box arrows
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -122,6 +157,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
