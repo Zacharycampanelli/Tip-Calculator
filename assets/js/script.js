@@ -10,6 +10,8 @@ const numOfPeopleEl = document.querySelector('#number');
 const customEl = document.querySelector('#custom');
 const tipAmountEl = document.querySelector('#tip_amount');
 const totalAmountEl = document.querySelector('#total_amount');
+const resetEl = document.querySelector("#reset_btn")
+
 
 const evaluateTipTotal = () => {
   if (bill_amount && bill_tip && bill_number_of_people) {
@@ -76,4 +78,11 @@ customEl.addEventListener('input', function()  {
     console.log(bill_tip);
   
   evaluateTipTotal();
-});
+}); 
+
+
+resetEl.addEventListener('click', () => {
+  billAmount.value = 0;
+  numOfPeopleEl.value = 0;
+  customEl.value = 0;
+})
