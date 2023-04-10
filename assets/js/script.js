@@ -12,14 +12,27 @@ const totalAmountEl = document.querySelector('#total_amount');
 const customEl = document.querySelector('#custom');
 const resetEl = document.querySelector('#reset_btn');
 const billErrorEl = document.querySelector('#bill_error');
+const peopleErrorEl = document.querySelector('#people_error');
 
-const checkIfZero = (num, el) => {
+// const removeErrorMsg = (err)
+
+const addErrorMsg = (err) => {
+  if (err.id === 'amount') {
+    billErrorEl.classList.remove('hidden');
+  }
+  if (err.id === 'number') {
+    peopleErrorEl.classList.remove('hidden');
+  }
+};
+
+const checkIfZero = (num, el, errMsgEl) => {
   if (num === 0) {
     el.classList.add('error');
-    addErrorMsg(el);
+    errMsgEl.classList.remove('hidden');
     return true;
   } else {
     el.classList.remove('error');
+    errMsgEl.classList.add('hidden');
     return false;
   }
 };
@@ -56,7 +69,7 @@ const evaluateTotalPerPerson = () => {
 const getBillAmount = (e) => {
   bill_amount = billAmountEl.value;
   bill_amount = parseFloat(bill_amount);
-  let check = checkIfZero(bill_amount, billAmountEl);
+  let check = checkIfZero(bill_amount, billAmountEl, billErrorEl);
   if (!check) {
     evaluateTipTotal();
   }
@@ -65,7 +78,7 @@ const getBillAmount = (e) => {
 const getNumberOfPeople = (e) => {
   bill_number_of_people = numOfPeopleEl.value;
   bill_number_of_people = parseFloat(bill_number_of_people);
-  let check = checkIfZero(bill_number_of_people, numOfPeopleEl);
+  let check = checkIfZero(bill_number_of_people, numOfPeopleEl, peopleErrorEl);
   if (!check) {
     evaluateTipTotal();
   }
@@ -93,7 +106,6 @@ const getTipAmount = (e) => {
     selectTipBox(selected);
   }
   evaluateTipTotal();
-
 };
 
 const getCustomTip = (e) => {
@@ -111,7 +123,7 @@ const resetValues = (e) => {
   bill_number_of_people = undefined;
 
   let current = document.getElementById('active');
-  current.removeAttribute('id')
+  current.removeAttribute('id');
 };
 
 billAmountEl.addEventListener('change', getBillAmount);

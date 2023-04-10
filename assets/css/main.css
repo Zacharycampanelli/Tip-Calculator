@@ -106,10 +106,10 @@ header {
   border: none;
   background-color: hsl(185, 38%, 97%);
   color: hsl(183, 100%, 15%);
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 700;
   text-align: right;
-  padding: 10px;
+  padding: 10px 0;
   width: 28vw;
 }
 .card_bill_input_box:hover, .card_bill_input_box:focus, .card_bill_input_box:target {
@@ -157,7 +157,7 @@ header {
   justify-content: space-between;
 }
 .card_tip_btn_group .btn {
-  margin: 7px 0;
+  margin: 6px 0;
 }
 .card_tip_btn_group #active {
   color: hsl(183, 100%, 15%);
@@ -165,7 +165,6 @@ header {
   cursor: pointer;
 }
 .card_tip_btn_group .btn:not(:last-child) {
-  width: 39vw;
   color: hsl(0, 0%, 100%);
   background: hsl(183, 100%, 15%);
   border-radius: 5px;
@@ -193,7 +192,6 @@ header {
   }
 }
 .card_tip_btn_group .btn:last-child {
-  width: 39vw;
   color: hsl(0, 0%, 100%);
   background: hsl(183, 100%, 15%);
   border-radius: 5px;
@@ -201,10 +199,10 @@ header {
   border: none;
   background-color: hsl(185, 38%, 97%);
   color: hsl(183, 100%, 15%);
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 700;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
 }
 .card_tip_btn_group .btn:last-child:hover, .card_tip_btn_group .btn:last-child:focus, .card_tip_btn_group .btn:last-child:target {
   border: 3px solid hsl(172, 67%, 45%);
@@ -251,10 +249,10 @@ header {
   border: none;
   background-color: hsl(185, 38%, 97%);
   color: hsl(183, 100%, 15%);
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 700;
   text-align: right;
-  padding: 10px;
+  padding: 10px 0;
   width: 28vw;
 }
 .card_people_input_box:hover, .card_people_input_box:focus, .card_people_input_box:target {
@@ -356,7 +354,7 @@ header {
   display: inline;
   position: absolute;
   right: 0;
-  top: -1rem;
+  top: 0;
 }
 
 .hidden {

@@ -16,6 +16,7 @@
       <div class="card" id="input">
         <div class="card_bill">
           <h2>Bill</h2>
+          <span class="hidden error_msg" id="bill_error">Can't be zero</span>
           <div class="card_bill_input">
             <img
             src="./assets/images/icon-dollar.svg"
@@ -24,7 +25,6 @@
             id="dollar_icon"
             />
             <input class="card_bill_input_box" id="amount" type="number" min="0" oninput="validity.valid||(value='');" placeholder="0" /> 
-            <span class="hidden error_msg" id="bill_error">Can't be zero</span>
           </div>
         </div>
 
@@ -42,13 +42,13 @@
 
         <div class="card_people">
           <h2>Number of People</h2>
-          <span class="hidden error_msg">Can't be zero</span>
+          <span class="hidden error_msg" id="people_error">Can't be zero</span>
           <div class="card_people_input">
             <img
-              src="./assets/images/icon-person.svg"
-              class="card_people_input_icon"
-              alt="icon of a person"
-              id="person_icon"
+            src="./assets/images/icon-person.svg"
+            class="card_people_input_icon"
+            alt="icon of a person"
+            id="person_icon"
             />
             <input class="card_people_input_box" id="number" type="number" min="0" oninput="validity.valid||(value='');" placeholder="0" />
           </div>

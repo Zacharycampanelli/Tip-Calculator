@@ -89,7 +89,7 @@ header {
     // margin: 0 auto;
 
     .btn {
-      margin: 7px 0;
+      margin: 6px 0;
       @include screen-desktop {
       }
     }
@@ -228,7 +228,7 @@ header {
   display: inline;
   position: absolute;
   right: 0;
-  top: -1rem;
+  top: 0;
 }
 
 .hidden {
