@@ -4,18 +4,6 @@
   background: $veryDarkCyan;
   border-radius: 5px;
   padding: 12px;
-
-
-@if $custom == false {
-
-  &:hover,
-  &:focus {
-    color: $veryDarkCyan;
-    background: $strongCyan;
-    cursor: pointer;
-  }
-}
-
   
 }
 
@@ -25,4 +13,5 @@
   background: $strongCyan;
   border-radius: 5px;
   padding: 12px;
+  cursor: pointer;
 }
