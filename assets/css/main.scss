@@ -58,7 +58,9 @@ header {
     &_box {
       @include input($textDir: right);
       @include placeholder($veryDarkCyan, 50%);
-      width: 28vw;
+      @include screen-desktop {
+        width: 28vw;
+      }
       padding: 10px;
     }
 
@@ -82,12 +84,15 @@ header {
 
   &_btn_group {
     // @include button;
-    max-width: 30vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     // margin: 0 auto;
+    
+    @include screen-desktop {
+      max-width: 30vw;
+    }
 
     .btn {
       margin: 6px 0;
@@ -107,6 +112,16 @@ header {
         width: 8vw;
       }
     }
+    
+    .btn:last-child {
+      @include button($custom: true);
+      @include input;
+      @include placeholder($veryDarkCyan);
+      width: 39vw;
+      @include screen-desktop {
+        width: 8vw;
+      }
+    }
 
     .btn:nth-child(even) {
       margin-left: 7px;
@@ -118,15 +133,6 @@ header {
       margin-right: 7px;
       @include screen-desktop {
         margin: 7px;
-      }
-    }
-
-    .btn:last-child {
-      @include button($custom: true);
-      @include input;
-      @include placeholder($veryDarkCyan);
-      @include screen-desktop {
-        width: 8vw;
       }
     }
   }
@@ -149,7 +155,9 @@ header {
     &_box {
       @include input($textDir: right);
       @include placeholder($veryDarkCyan, 50%);
-      width: 28vw;
+      @include screen-desktop {
+        width: 28vw;
+      }
       padding: 10px;
     }
 

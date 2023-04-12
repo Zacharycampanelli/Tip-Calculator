@@ -110,7 +110,7 @@ header {
   font-weight: 700;
   text-align: right;
   padding: 10px 0px;
-  width: 28vw;
+  width: 84vw;
   padding: 10px;
 }
 .card_bill_input_box:hover, .card_bill_input_box:focus, .card_bill_input_box:target {
@@ -133,6 +133,11 @@ header {
   color: hsl(183, 100%, 15%);
   opacity: 50%;
 }
+@media screen and (min-width: 768px) {
+  .card_bill_input_box {
+    width: 28vw;
+  }
+}
 .card_bill_input_icon {
   position: absolute;
   top: 16px;
@@ -151,11 +156,15 @@ header {
   }
 }
 .card_tip_btn_group {
-  max-width: 30vw;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .card_tip_btn_group {
+    max-width: 30vw;
+  }
 }
 .card_tip_btn_group .btn {
   margin: 6px 0;
@@ -170,26 +179,11 @@ header {
   background: hsl(183, 100%, 15%);
   border-radius: 5px;
   padding: 12px;
+  width: 39vw;
 }
 @media screen and (min-width: 768px) {
   .card_tip_btn_group .btn:not(:last-child) {
     width: 8vw;
-  }
-}
-.card_tip_btn_group .btn:nth-child(even) {
-  margin-left: 7px;
-}
-@media screen and (min-width: 768px) {
-  .card_tip_btn_group .btn:nth-child(even) {
-    margin: 7px;
-  }
-}
-.card_tip_btn_group .btn:nth-child(odd) {
-  margin-right: 7px;
-}
-@media screen and (min-width: 768px) {
-  .card_tip_btn_group .btn:nth-child(odd) {
-    margin: 7px;
   }
 }
 .card_tip_btn_group .btn:last-child {
@@ -197,6 +191,7 @@ header {
   background: hsl(183, 100%, 15%);
   border-radius: 5px;
   padding: 12px;
+  width: 39vw;
   border: none;
   background-color: hsl(185, 38%, 97%);
   color: hsl(183, 100%, 15%);
@@ -204,6 +199,8 @@ header {
   font-weight: 700;
   text-align: center;
   padding: 10px 0px;
+  width: 84vw;
+  width: 39vw;
 }
 .card_tip_btn_group .btn:last-child:hover, .card_tip_btn_group .btn:last-child:focus, .card_tip_btn_group .btn:last-child:target {
   border: 3px solid hsl(172, 67%, 45%);
@@ -230,6 +227,22 @@ header {
     width: 8vw;
   }
 }
+.card_tip_btn_group .btn:nth-child(even) {
+  margin-left: 7px;
+}
+@media screen and (min-width: 768px) {
+  .card_tip_btn_group .btn:nth-child(even) {
+    margin: 7px;
+  }
+}
+.card_tip_btn_group .btn:nth-child(odd) {
+  margin-right: 7px;
+}
+@media screen and (min-width: 768px) {
+  .card_tip_btn_group .btn:nth-child(odd) {
+    margin: 7px;
+  }
+}
 
 .card_people {
   margin-bottom: 32px;
@@ -254,7 +267,7 @@ header {
   font-weight: 700;
   text-align: right;
   padding: 10px 0px;
-  width: 28vw;
+  width: 84vw;
   padding: 10px;
 }
 .card_people_input_box:hover, .card_people_input_box:focus, .card_people_input_box:target {
@@ -276,6 +289,11 @@ header {
 .card_people_input_box:-ms-input-placeholder {
   color: hsl(183, 100%, 15%);
   opacity: 50%;
+}
+@media screen and (min-width: 768px) {
+  .card_people_input_box {
+    width: 28vw;
+  }
 }
 .card_people_input_icon {
   position: absolute;
