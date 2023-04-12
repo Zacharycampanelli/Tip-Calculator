@@ -13,4 +13,14 @@
   border-radius: 5px;
   padding: 12px;
   cursor: pointer;
+
+  &:disabled {
+    color: $veryDarkCyan;
+    background: $disabled;
+  }
+
+  &:hover {
+    color: $veryDarkCyan;
+    background: $lightStrongCyan;
+  }
 }

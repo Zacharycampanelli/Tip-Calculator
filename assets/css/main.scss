@@ -59,6 +59,7 @@ header {
       @include input($textDir: right);
       @include placeholder($veryDarkCyan, 50%);
       width: 28vw;
+      padding: 10px;
     }
 
     &_icon {
@@ -99,8 +100,6 @@ header {
       background: $strongCyan;
       cursor: pointer;
     }
-
- 
 
     .btn:not(:last-child) {
       @include button;
@@ -151,6 +150,7 @@ header {
       @include input($textDir: right);
       @include placeholder($veryDarkCyan, 50%);
       width: 28vw;
+      padding: 10px;
     }
 
     &_icon {
@@ -166,6 +166,7 @@ header {
   background: $veryDarkCyan;
   border-radius: 15px;
   padding: 37px 24px 24px;
+  position: relative;
 
   @include screen-desktop {
     padding: 40px;
@@ -205,16 +206,19 @@ header {
       }
     }
   }
-
+  
   #reset_btn {
     @include reset_btn;
     font-size: 20px;
     margin-top: 28px;
-
+    
     @include screen-desktop {
-      width: 100%;
+      width: 78%;
+      position: absolute;
+      bottom: 8%;
     }
   }
+  
 }
 
 .error {
@@ -247,9 +251,6 @@ header {
   color: hsl(228, 45%, 44%);
 }
 
-.disabled {
-  background: black;
-}
 
 // Removes input box arrows
 /* Chrome, Safari, Edge, Opera */

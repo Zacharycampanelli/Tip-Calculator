@@ -109,8 +109,9 @@ header {
   font-size: 23px;
   font-weight: 700;
   text-align: right;
-  padding: 10px 0;
+  padding: 10px 0px;
   width: 28vw;
+  padding: 10px;
 }
 .card_bill_input_box:hover, .card_bill_input_box:focus, .card_bill_input_box:target {
   border: 3px solid hsl(172, 67%, 45%);
@@ -202,7 +203,7 @@ header {
   font-size: 23px;
   font-weight: 700;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0px;
 }
 .card_tip_btn_group .btn:last-child:hover, .card_tip_btn_group .btn:last-child:focus, .card_tip_btn_group .btn:last-child:target {
   border: 3px solid hsl(172, 67%, 45%);
@@ -252,8 +253,9 @@ header {
   font-size: 23px;
   font-weight: 700;
   text-align: right;
-  padding: 10px 0;
+  padding: 10px 0px;
   width: 28vw;
+  padding: 10px;
 }
 .card_people_input_box:hover, .card_people_input_box:focus, .card_people_input_box:target {
   border: 3px solid hsl(172, 67%, 45%);
@@ -286,6 +288,7 @@ header {
   background: hsl(183, 100%, 15%);
   border-radius: 15px;
   padding: 37px 24px 24px;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .card_results {
@@ -336,9 +339,19 @@ header {
   font-size: 20px;
   margin-top: 28px;
 }
+.card_results #reset_btn:disabled {
+  color: hsl(183, 100%, 15%);
+  background: hsl(183, 78%, 24%);
+}
+.card_results #reset_btn:hover {
+  color: hsl(183, 100%, 15%);
+  background: hsl(172, 61%, 77%);
+}
 @media screen and (min-width: 768px) {
   .card_results #reset_btn {
-    width: 100%;
+    width: 78%;
+    position: absolute;
+    bottom: 8%;
   }
 }
 
@@ -368,10 +381,6 @@ header {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-.disabled {
-  background: black;
 }
 
 /* Chrome, Safari, Edge, Opera */
