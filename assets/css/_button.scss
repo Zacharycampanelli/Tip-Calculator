@@ -1,27 +1,26 @@
-@mixin button($custom: false){
-  color: $white;
-  background: $veryDarkCyan;
-  border-radius: 5px;
-  padding: 12px;
+@mixin button {
   width: 39vw;
-  
+  padding: 12px;
+  border-radius: 5px;
+  background: $veryDarkCyan;
+  color: $white;
 }
 
 @mixin reset_btn {
   width: 70vw;
-  color: $veryDarkCyan;
-  background: $strongCyan;
-  border-radius: 5px;
   padding: 12px;
+  border-radius: 5px;
+  background: $strongCyan;
+  color: $veryDarkCyan;
   cursor: pointer;
 
   &:disabled {
-    color: $veryDarkCyan;
     background: $disabled;
+    color: $veryDarkCyan;
   }
 
   &:hover {
-    color: $veryDarkCyan;
     background: $lightStrongCyan;
+    color: $veryDarkCyan;
   }
 }

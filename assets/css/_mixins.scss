@@ -22,17 +22,15 @@
 }
 
 @mixin input($textDir: center) {
+  width: 84vw;
+  padding: 10px 0px;
   border: none;
   background-color: $lightGrayishCyan;
-  color: $veryDarkCyan;
   font-size: 23px;
   font-weight: 700;
   text-align: $textDir;
-  padding: 10px 0px;
-  width: 84vw;
+  color: $veryDarkCyan;
 
-  
-  
   &:hover,
   &:focus,
   &:target {

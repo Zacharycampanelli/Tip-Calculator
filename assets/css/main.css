@@ -49,17 +49,16 @@ input {
 }
 
 body {
+  background: hsl(185, 41%, 84%);
   font-family: "Space Mono", monospace;
   font-size: 24px;
   font-weight: 700;
   color: hsl(186, 14%, 43%);
-  background: hsl(185, 41%, 84%);
-  width: 100vw;
 }
 
 h2 {
-  font-size: 16px;
   margin-bottom: 12px;
+  font-size: 16px;
 }
 
 header {
@@ -68,28 +67,28 @@ header {
 }
 
 .card {
-  background: hsl(0, 0%, 100%);
   padding: 32px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  background: hsl(0, 0%, 100%);
 }
 @media screen and (min-width: 768px) {
   .card {
-    width: 65%;
-    height: 60vh;
     display: flex;
-    margin: 0 auto;
-    border-radius: 25px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 65%;
+    height: 60vh;
+    margin: 0 auto;
     padding: 45px 48px 48px;
+    border-radius: 25px;
   }
 }
 
 .card_bill {
-  margin-bottom: 32px;
   position: relative;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   .card_bill {
@@ -103,14 +102,14 @@ header {
   position: relative;
 }
 .card_bill_input_box {
+  width: 84vw;
+  padding: 10px 0px;
   border: none;
   background-color: hsl(185, 38%, 97%);
-  color: hsl(183, 100%, 15%);
   font-size: 23px;
   font-weight: 700;
   text-align: right;
-  padding: 10px 0px;
-  width: 84vw;
+  color: hsl(183, 100%, 15%);
   padding: 10px;
 }
 .card_bill_input_box:hover, .card_bill_input_box:focus, .card_bill_input_box:target {
@@ -170,16 +169,16 @@ header {
   margin: 6px 0;
 }
 .card_tip_btn_group #active {
-  color: hsl(183, 100%, 15%);
   background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
   cursor: pointer;
 }
 .card_tip_btn_group .btn:not(:last-child) {
-  color: hsl(0, 0%, 100%);
-  background: hsl(183, 100%, 15%);
-  border-radius: 5px;
-  padding: 12px;
   width: 39vw;
+  padding: 12px;
+  border-radius: 5px;
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
 }
 @media screen and (min-width: 768px) {
   .card_tip_btn_group .btn:not(:last-child) {
@@ -187,19 +186,19 @@ header {
   }
 }
 .card_tip_btn_group .btn:last-child {
-  color: hsl(0, 0%, 100%);
-  background: hsl(183, 100%, 15%);
-  border-radius: 5px;
-  padding: 12px;
   width: 39vw;
+  padding: 12px;
+  border-radius: 5px;
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  width: 84vw;
+  padding: 10px 0px;
   border: none;
   background-color: hsl(185, 38%, 97%);
-  color: hsl(183, 100%, 15%);
   font-size: 23px;
   font-weight: 700;
   text-align: center;
-  padding: 10px 0px;
-  width: 84vw;
+  color: hsl(183, 100%, 15%);
   width: 39vw;
 }
 .card_tip_btn_group .btn:last-child:hover, .card_tip_btn_group .btn:last-child:focus, .card_tip_btn_group .btn:last-child:target {
@@ -245,8 +244,8 @@ header {
 }
 
 .card_people {
-  margin-bottom: 32px;
   position: relative;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   .card_people {
@@ -260,14 +259,14 @@ header {
   position: relative;
 }
 .card_people_input_box {
+  width: 84vw;
+  padding: 10px 0px;
   border: none;
   background-color: hsl(185, 38%, 97%);
-  color: hsl(183, 100%, 15%);
   font-size: 23px;
   font-weight: 700;
   text-align: right;
-  padding: 10px 0px;
-  width: 84vw;
+  color: hsl(183, 100%, 15%);
   padding: 10px;
 }
 .card_people_input_box:hover, .card_people_input_box:focus, .card_people_input_box:target {
@@ -302,26 +301,26 @@ header {
 }
 
 .card_results {
-  color: hsl(172, 67%, 45%);
-  background: hsl(183, 100%, 15%);
-  border-radius: 15px;
-  padding: 37px 24px 24px;
   position: relative;
+  padding: 37px 24px 24px;
+  border-radius: 15px;
+  background: hsl(183, 100%, 15%);
+  color: hsl(172, 67%, 45%);
 }
 @media screen and (min-width: 768px) {
   .card_results {
-    padding: 40px;
     width: 30vw;
     height: 100%;
+    padding: 40px;
   }
 }
 .card_results h2 {
-  color: hsl(0, 0%, 100%);
   margin-bottom: 3px;
+  color: hsl(0, 0%, 100%);
 }
 .card_results h3 {
-  color: hsl(183, 15%, 56%);
   font-size: 13px;
+  color: hsl(183, 15%, 56%);
 }
 .card_results #tip_amount,
 .card_results #total_amount {
@@ -349,27 +348,27 @@ header {
 }
 .card_results #reset_btn {
   width: 70vw;
-  color: hsl(183, 100%, 15%);
-  background: hsl(172, 67%, 45%);
-  border-radius: 5px;
   padding: 12px;
+  border-radius: 5px;
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
   cursor: pointer;
-  font-size: 20px;
   margin-top: 28px;
+  font-size: 20px;
 }
 .card_results #reset_btn:disabled {
-  color: hsl(183, 100%, 15%);
   background: hsl(183, 78%, 24%);
+  color: hsl(183, 100%, 15%);
 }
 .card_results #reset_btn:hover {
-  color: hsl(183, 100%, 15%);
   background: hsl(172, 61%, 77%);
+  color: hsl(183, 100%, 15%);
 }
 @media screen and (min-width: 768px) {
   .card_results #reset_btn {
-    width: 78%;
     position: absolute;
     bottom: 8%;
+    width: 78%;
   }
 }
 
@@ -378,14 +377,14 @@ header {
 }
 
 .error_msg {
-  color: hsl(13, 70%, 61%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline;
+  margin-right: 1.5em;
   font-size: 16px;
   text-align: right;
-  margin-right: 1.5em;
-  display: inline;
-  position: absolute;
-  right: 0;
-  top: 0;
+  color: hsl(13, 70%, 61%);
 }
 
 .hidden {

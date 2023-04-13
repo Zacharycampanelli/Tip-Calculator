@@ -6,17 +6,16 @@
 @import 'typography';
 
 body {
+  background: $background;
   font-family: 'Space Mono', monospace;
   font-size: 24px;
   font-weight: 700;
   color: $darkGrayishCyan;
-  background: $background;
-  width: 100vw;
 }
 
 h2 {
-  font-size: 16px;
   margin-bottom: 12px;
+  font-size: 16px;
 }
 
 header {
@@ -25,27 +24,28 @@ header {
 }
 
 .card {
-  background: $white;
   padding: 32px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  background: $white;
 
   @include screen-desktop {
-    width: 65%;
-    height: 60vh;
     display: flex;
-    margin: 0 auto;
-    border-radius: 25px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 65%;
+    height: 60vh;
+    margin: 0 auto;
     padding: 45px 48px 48px;
+    border-radius: 25px;
   }
 }
 
 .card_bill {
-  margin-bottom: 32px;
   position: relative;
+  margin-bottom: 32px;
+
   @include screen-desktop {
     display: flex;
     flex-direction: column;
@@ -55,13 +55,15 @@ header {
 
   &_input {
     position: relative;
+
     &_box {
       @include input($textDir: right);
       @include placeholder($veryDarkCyan, 50%);
+      padding: 10px;
+
       @include screen-desktop {
         width: 28vw;
       }
-      padding: 10px;
     }
 
     &_icon {
@@ -83,41 +85,39 @@ header {
   }
 
   &_btn_group {
-    // @include button;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    // margin: 0 auto;
-    
+
     @include screen-desktop {
       max-width: 30vw;
     }
 
     .btn {
       margin: 6px 0;
-      @include screen-desktop {
-      }
     }
 
     #active {
-      color: $veryDarkCyan;
       background: $strongCyan;
+      color: $veryDarkCyan;
       cursor: pointer;
     }
 
     .btn:not(:last-child) {
       @include button;
+
       @include screen-desktop {
         width: 8vw;
       }
     }
-    
+
     .btn:last-child {
-      @include button($custom: true);
+      @include button;
       @include input;
       @include placeholder($veryDarkCyan);
       width: 39vw;
+
       @include screen-desktop {
         width: 8vw;
       }
@@ -125,12 +125,15 @@ header {
 
     .btn:nth-child(even) {
       margin-left: 7px;
+
       @include screen-desktop {
         margin: 7px;
       }
     }
+
     .btn:nth-child(odd) {
       margin-right: 7px;
+
       @include screen-desktop {
         margin: 7px;
       }
@@ -139,8 +142,8 @@ header {
 }
 
 .card_people {
-  margin-bottom: 32px;
   position: relative;
+  margin-bottom: 32px;
 
   @include screen-desktop {
     display: flex;
@@ -155,9 +158,11 @@ header {
     &_box {
       @include input($textDir: right);
       @include placeholder($veryDarkCyan, 50%);
+
       @include screen-desktop {
         width: 28vw;
       }
+
       padding: 10px;
     }
 
@@ -170,26 +175,26 @@ header {
 }
 
 .card_results {
-  color: $strongCyan;
-  background: $veryDarkCyan;
-  border-radius: 15px;
-  padding: 37px 24px 24px;
   position: relative;
+  padding: 37px 24px 24px;
+  border-radius: 15px;
+  background: $veryDarkCyan;
+  color: $strongCyan;
 
   @include screen-desktop {
-    padding: 40px;
     width: 30vw;
     height: 100%;
+    padding: 40px;
   }
 
   h2 {
-    color: $white;
     margin-bottom: 3px;
+    color: $white;
   }
 
   h3 {
-    color: $dullGreenishGray;
     font-size: 13px;
+    color: $dullGreenishGray;
   }
 
   #tip_amount,
@@ -205,6 +210,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 22px;
+
     &_heading {
       flex-direction: column;
 
@@ -214,42 +220,38 @@ header {
       }
     }
   }
-  
+
   #reset_btn {
     @include reset_btn;
-    font-size: 20px;
     margin-top: 28px;
-    
+    font-size: 20px;
+
     @include screen-desktop {
-      width: 78%;
       position: absolute;
       bottom: 8%;
+      width: 78%;
     }
   }
-  
 }
 
 .error {
   border: 2px solid red;
 }
+
 .error_msg {
-  color: $error;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline;
+  margin-right: 1.5em;
   font-size: 16px;
   text-align: right;
-  margin-right: 1.5em;
-  display: inline;
-  position: absolute;
-  right: 0;
-  top: 0;
+  color: $error;
 }
 
 .hidden {
   display: none;
 }
-
-// .custom_selected {
-//   border: 3px solid $strongCyan;
-// }
 
 .attribution {
   font-size: 11px;
@@ -258,7 +260,6 @@ header {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
 
 // Removes input box arrows
 /* Chrome, Safari, Edge, Opera */
